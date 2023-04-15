@@ -1,0 +1,44 @@
+/* 22 ADDING UPDATING AND DELETING DATA
+Created by Patrick Mensah 
+Date Created: 04/14/2023
+Description:  ADDING MODIFYING AND DELETING DATA (DATA MANIPULATION LANGUAGE)
+*/
+--The official statements that are referred to as DML are insert, update, and delete.
+
+--INSERTING  DATA
+--Assuming we want to add a new artist  Patrick Mensah into the artitist table 
+
+INSERT INTO
+    Artist (Name)
+VALUES ('Patrick Mensah')
+
+
+--UPDATING DATA 
+--This means modyfying a data in a table 
+--Assuming we want to modify  new artist  Patrick Mensah into the artitist table  to Patrick Mensah Philant
+
+UPDATE 
+    Artist 
+SET Name = 'Patrick Mensah Philant'
+WHERE
+    ArtistId =276
+    
+
+UPDATE 
+    Artist 
+SET Name = 'Patrick Mensah Philant2'
+WHERE
+    Name = 'Patrick Mensah'
+    
+
+--DELETING DATA 
+DELETE FROM
+    Artist 
+WHERE 
+    Name = 'Patrick Mensah Philant2'
+
+--Another way 
+DELETE FROM
+    Artist 
+WHERE 
+    ArtistId =276
